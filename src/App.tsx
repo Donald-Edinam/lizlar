@@ -30,7 +30,7 @@ function App() {
             <span className="font-semibold">Elizabeth Lartey</span>
           </div>
           <div className="flex gap-4">
-            <a href="#" className="text-gray-400 hover:text-red-500 transition-colors">
+            <a href="https://www.linkedin.com/in/elizabeth-lartey-b0337634b/" className="text-gray-400 hover:text-red-500 transition-colors">
               <Linkedin className="w-5 h-5" />
             </a>
             {/* <a href="#" className="text-gray-400 hover:text-red-500 transition-colors">
