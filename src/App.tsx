@@ -1,5 +1,5 @@
-import React from 'react';
 import { Github, Linkedin, Mail, Calendar, MapPin, GraduationCap, Globe, Users, Zap, Database, Building2 } from 'lucide-react';
+import NewPhoto from "../src/assets/lizlar.jpg"
 
 function App() {
   const skills = [
@@ -22,8 +22,8 @@ function App() {
       <nav className="fixed top-0 left-0 right-0 p-6 z-50 bg-gray-900/80 backdrop-blur-sm">
         <div className="max-w-6xl mx-auto flex justify-between items-center">
           <div className="flex items-center gap-4">
-            <img 
-              src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&q=80&w=100"
+            <img
+              src={NewPhoto}
               alt="Elizabeth Lartey"
               className="w-10 h-10 rounded-full object-cover"
             />
@@ -33,12 +33,12 @@ function App() {
             <a href="#" className="text-gray-400 hover:text-red-500 transition-colors">
               <Linkedin className="w-5 h-5" />
             </a>
-            <a href="#" className="text-gray-400 hover:text-red-500 transition-colors">
+            {/* <a href="#" className="text-gray-400 hover:text-red-500 transition-colors">
               <Github className="w-5 h-5" />
             </a>
             <a href="#" className="text-gray-400 hover:text-red-500 transition-colors">
               <Mail className="w-5 h-5" />
-            </a>
+            </a> */}
           </div>
         </div>
       </nav>
@@ -47,8 +47,8 @@ function App() {
       <section className="min-h-screen relative flex items-center">
         <div className="absolute inset-0 z-0">
           <div className="absolute inset-0 bg-gradient-to-r from-gray-900 to-transparent z-10" />
-          <img 
-            src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&q=80&w=2000"
+          <img
+            src={NewPhoto}
             alt="Elizabeth Lartey"
             className="w-full h-full object-cover"
           />
@@ -72,21 +72,25 @@ function App() {
         <div className="max-w-6xl mx-auto px-6">
           <h2 className="text-4xl font-bold mb-16 text-center">ABOUT ME</h2>
           <div className="grid md:grid-cols-2 gap-12 items-center">
-            <img 
-              src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&q=80&w=800"
+            <img
+              src={NewPhoto}
               alt="Elizabeth Lartey"
               className="rounded-lg shadow-2xl"
             />
             <div>
               <p className="text-gray-300 mb-8 leading-relaxed">
-                I have a strong background in customer relationship management (CRM), business development, and digital transformation, with a focus on tourism, education, and job creation.
+                Hi, my name is Elizabeth Lartey. I have a strong background in customer relationship management (CRM), business development, and digital transformation, with a focus on tourism, education, and job creation.
+                My top skills include Salesforce administration, data-driven decision-making, and process automation. I excel at optimizing workflows, enhancing customer experiences, and driving business growth through technology.
+                What sets me apart is my ability to bridge technology and strategy—I don’t just implement Salesforce; I tailor solutions that create real impact. My expertise helps businesses scale efficiently, improve customer engagement, and boost productivity.
+                I bring innovation, efficiency, and problem-solving to any team, ensuring businesses get the most out of Salesforce while staying competitive in a digital world.
+                I’m looking for opportunities to apply my skills in a dynamic organization or collaborate on projects where Salesforce can drive growth. Let’s connect to explore how I can add value to your business!
               </p>
               <div className="grid grid-cols-2 gap-6">
                 <div className="flex items-center gap-3">
                   <Calendar className="w-5 h-5 text-red-500" />
                   <div>
                     <div className="text-sm text-gray-400">Experience</div>
-                    <div>8+ Years</div>
+                    <div>3+ Years</div>
                   </div>
                 </div>
                 <div className="flex items-center gap-3">
@@ -123,15 +127,15 @@ function App() {
           <div className="grid md:grid-cols-2 gap-12">
             <div>
               <div className="flex flex-wrap gap-2 mb-12">
-                {['SALESFORCE', 'CRM', 'AUTOMATION', 'DATA ANALYTICS', 'BUSINESS DEVELOPMENT', 
+                {['SALESFORCE', 'CRM', 'AUTOMATION', 'DATA ANALYTICS', 'BUSINESS DEVELOPMENT',
                   'PROCESS OPTIMIZATION', 'CUSTOMER EXPERIENCE', 'DIGITAL TRANSFORMATION'].map((skill) => (
-                  <span key={skill} className="bg-red-500 text-sm px-4 py-2 rounded-full">
-                    {skill}
-                  </span>
-                ))}
+                    <span key={skill} className="bg-red-500 text-sm px-4 py-2 rounded-full">
+                      {skill}
+                    </span>
+                  ))}
               </div>
               <p className="text-gray-300">
-                Expertise in implementing and optimizing Salesforce solutions, automating business processes, 
+                Expertise in implementing and optimizing Salesforce solutions, automating business processes,
                 and driving digital transformation initiatives.
               </p>
             </div>
@@ -143,7 +147,7 @@ function App() {
                     <span>{skill.level}%</span>
                   </div>
                   <div className="h-2 bg-gray-700 rounded-full overflow-hidden">
-                    <div 
+                    <div
                       className="h-full bg-red-500 rounded-full"
                       style={{ width: `${skill.level}%` }}
                     />
