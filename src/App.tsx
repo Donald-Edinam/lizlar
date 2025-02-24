@@ -2,6 +2,7 @@ import { Linkedin, Calendar, MapPin, GraduationCap, Globe, Users, Zap, Database,
 import NewPhoto from "../src/assets/lizlar.jpg";
 import { motion, useInView } from "framer-motion";
 import { useRef, useEffect, useState } from "react";
+import PithcVideo from "./assets/lizlar.mp4"
 
 function App() {
   const skills = [
@@ -448,7 +449,7 @@ function App() {
               {isVideoSectionInView ? (
                 <iframe 
                   className="w-full h-full"
-                  src="https://www.youtube.com/embed/q9cixsyimx8?autoplay=1&mute=0"
+                  src={PithcVideo}
                   title="Elizabeth Lartey Elevator Pitch"
                   frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
